@@ -31,3 +31,32 @@ sudo python ./robotcar.py
 vim robotcar.py 
 sudo python ./robotcar.py  
 exit
+vim robotcar.py 
+touch vegaMotor.py
+ls
+vim vegaMotor.py 
+cat robotcar.py 
+clear
+ls
+mv vegaMotor.py
+mv vegaMotor.py vegaMain.py
+ls
+mv robotcar.py vegaMotor.py
+ls
+vim vegaMotor.py 
+ls
+vim vegaMotor.py 
+ls
+vim vegaMotor.py 
+;s
+ls
+ls =;tr
+ls -ltr
+cat vegaMotor.py 
+vim vegaMotor.py 
+ls -a
+rm .vegaMotor.py.swp 
+ls
+vim vegaM
+vim vegaMotor.py 
+vegaMotor.py

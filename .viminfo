@@ -11,10 +11,10 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
-:wq!
-|2,0,1601387015,,"wq!"
 :q!
-|2,0,1601386269,,"q!"
+|2,0,1601458082,,"q!"
+:wq!
+|2,0,1601395500,,"wq!"
 
 # Search String History (newest to oldest):
 
@@ -25,278 +25,352 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
-""1	LINE	0
+""1	CHAR	0
+	R
+|3,1,1,0,1,0,1601391188,"R"
+"2	LINE	0
+	        print("initialised")
+|3,0,2,1,1,0,1601388433,"        print(\"initialised\")"
+"3	LINE	0
+	
+|3,0,3,1,1,0,1601388345,""
+"4	LINE	0
+	        GPIO.output(18,GPIO.LOW)
+|3,0,4,1,1,0,1601388344,"        GPIO.output(18,GPIO.LOW)"
+"5	LINE	0
+	        GPIO.output(11,GPIO.LOW)
+|3,0,5,1,1,0,1601388343,"        GPIO.output(11,GPIO.LOW)"
+"6	LINE	0
+	        GPIO.output(16,GPIO.HIGH)
+|3,0,6,1,1,0,1601388343,"        GPIO.output(16,GPIO.HIGH)"
+"7	LINE	0
+	        GPIO.output(13,GP
+|3,0,7,1,1,0,1601388342,"        GPIO.output(13,GP"
+"8	LINE	0
 	            GPIO.cleanup()
 	
-|3,1,1,1,2,0,1601386909,"            GPIO.cleanup()",""
-"2	LINE	0
-	    GPIO.cleanup()
-|3,0,2,1,1,0,1601386908,"    GPIO.cleanup()"
-"3	LINE	0
-	    print("clean up")
-|3,0,3,1,1,0,1601386907,"    print(\"clean up\")"
-"4	LINE	0
-	finally:
-|3,0,4,1,1,0,1601386907,"finally:"
-"5	LINE	0
-	    print("some error")
-|3,0,5,1,1,0,1601386906,"    print(\"some error\")"
-"6	LINE	0
-	except:
-|3,0,6,1,1,0,1601386906,"except:"
-"7	LINE	0
-	    pwm1 = GPIO.PWM(33,0)
-|3,0,7,1,1,0,1601386905,"    pwm1 = GPIO.PWM(33,0)"
-"8	LINE	0
-	    pwm0 = GPIO.PWM(32,0)
-|3,0,8,1,1,0,1601386904,"    pwm0 = GPIO.PWM(32,0)"
+|3,0,8,1,2,0,1601386909,"            GPIO.cleanup()",""
 "9	LINE	0
-	    time.sleep(5)
-|3,0,9,1,1,0,1601386904,"    time.sleep(5)"
+	    GPIO.cleanup()
+|3,0,9,1,1,0,1601386908,"    GPIO.cleanup()"
 "-	CHAR	0
-	#
-|3,0,36,0,1,0,1601310215,"#"
+	R
+|3,0,36,0,1,0,1601391188,"R"
 
 # File marks:
-'0  43  15  ~/vegaMotor.py
-|4,48,43,15,1601387015,"~/vegaMotor.py"
-'1  39  0  ~/vegaMotor.py
-|4,49,39,0,1601386922,"~/vegaMotor.py"
-'2  38  0  ~/vegaMotor.py
-|4,50,38,0,1601386922,"~/vegaMotor.py"
-'3  1  0  ~/vegaM
-|4,51,1,0,1601386269,"~/vegaM"
-'4  1  0  ~/vegaMotor.py
-|4,52,1,0,1601386216,"~/vegaMotor.py"
-'5  1  0  ~/vegaMotor.py
-|4,53,1,0,1601386216,"~/vegaMotor.py"
-'6  1  0  ~/vegaMotor.py
-|4,54,1,0,1601386216,"~/vegaMotor.py"
-'7  1  0  ~/vegaMotor.py
-|4,55,1,0,1601386216,"~/vegaMotor.py"
-'8  4  0  ~/vegaMotor.py
-|4,56,4,0,1601386168,"~/vegaMotor.py"
-'9  4  0  ~/vegaMotor.py
-|4,57,4,0,1601386168,"~/vegaMotor.py"
+'0  38  22  ~/vegaMotor.py
+|4,48,38,22,1601458082,"~/vegaMotor.py"
+'1  91  22  ~/vegaMotor.py
+|4,49,91,22,1601395500,"~/vegaMotor.py"
+'2  91  22  ~/vegaMotor.py
+|4,50,91,22,1601395500,"~/vegaMotor.py"
+'3  31  26  ~/vegaMotor.py
+|4,51,31,26,1601394186,"~/vegaMotor.py"
+'4  31  26  ~/vegaMotor.py
+|4,52,31,26,1601394186,"~/vegaMotor.py"
+'5  31  26  ~/vegaMotor.py
+|4,53,31,26,1601394186,"~/vegaMotor.py"
+'6  31  26  ~/vegaMotor.py
+|4,54,31,26,1601394186,"~/vegaMotor.py"
+'7  20  4  ~/vegaMotor.py
+|4,55,20,4,1601393997,"~/vegaMotor.py"
+'8  20  4  ~/vegaMotor.py
+|4,56,20,4,1601393997,"~/vegaMotor.py"
+'9  20  4  ~/vegaMotor.py
+|4,57,20,4,1601393997,"~/vegaMotor.py"
 
 # Jumplist (newest first):
+-'  38  22  ~/vegaMotor.py
+|4,39,38,22,1601458082,"~/vegaMotor.py"
+-'  91  22  ~/vegaMotor.py
+|4,39,91,22,1601458029,"~/vegaMotor.py"
+-'  91  22  ~/vegaMotor.py
+|4,39,91,22,1601395500,"~/vegaMotor.py"
+-'  31  26  ~/vegaMotor.py
+|4,39,31,26,1601394187,"~/vegaMotor.py"
+-'  31  26  ~/vegaMotor.py
+|4,39,31,26,1601394187,"~/vegaMotor.py"
+-'  31  26  ~/vegaMotor.py
+|4,39,31,26,1601394186,"~/vegaMotor.py"
+-'  20  4  ~/vegaMotor.py
+|4,39,20,4,1601393997,"~/vegaMotor.py"
+-'  20  4  ~/vegaMotor.py
+|4,39,20,4,1601393997,"~/vegaMotor.py"
+-'  20  4  ~/vegaMotor.py
+|4,39,20,4,1601393997,"~/vegaMotor.py"
+-'  58  12  ~/vegaMotor.py
+|4,39,58,12,1601393299,"~/vegaMotor.py"
+-'  58  12  ~/vegaMotor.py
+|4,39,58,12,1601393299,"~/vegaMotor.py"
+-'  58  12  ~/vegaMotor.py
+|4,39,58,12,1601393299,"~/vegaMotor.py"
+-'  58  12  ~/vegaMotor.py
+|4,39,58,12,1601392390,"~/vegaMotor.py"
+-'  16  12  ~/vegaMotor.py
+|4,39,16,12,1601391382,"~/vegaMotor.py"
+-'  16  12  ~/vegaMotor.py
+|4,39,16,12,1601391382,"~/vegaMotor.py"
+-'  16  12  ~/vegaMotor.py
+|4,39,16,12,1601391382,"~/vegaMotor.py"
+-'  16  12  ~/vegaMotor.py
+|4,39,16,12,1601391382,"~/vegaMotor.py"
+-'  16  12  ~/vegaMotor.py
+|4,39,16,12,1601391381,"~/vegaMotor.py"
+-'  18  40  ~/vegaMotor.py
+|4,39,18,40,1601390870,"~/vegaMotor.py"
+-'  18  40  ~/vegaMotor.py
+|4,39,18,40,1601390870,"~/vegaMotor.py"
+-'  18  40  ~/vegaMotor.py
+|4,39,18,40,1601390870,"~/vegaMotor.py"
+-'  18  40  ~/vegaMotor.py
+|4,39,18,40,1601390870,"~/vegaMotor.py"
+-'  18  40  ~/vegaMotor.py
+|4,39,18,40,1601390870,"~/vegaMotor.py"
+-'  16  40  ~/vegaMotor.py
+|4,39,16,40,1601389397,"~/vegaMotor.py"
+-'  6  20  ~/vegaMotor.py
+|4,39,6,20,1601388366,"~/vegaMotor.py"
+-'  6  20  ~/vegaMotor.py
+|4,39,6,20,1601388366,"~/vegaMotor.py"
+-'  6  20  ~/vegaMotor.py
+|4,39,6,20,1601388366,"~/vegaMotor.py"
+-'  6  20  ~/vegaMotor.py
+|4,39,6,20,1601388366,"~/vegaMotor.py"
+-'  6  20  ~/vegaMotor.py
+|4,39,6,20,1601388366,"~/vegaMotor.py"
+-'  6  20  ~/vegaMotor.py
+|4,39,6,20,1601388366,"~/vegaMotor.py"
+-'  6  20  ~/vegaMotor.py
+|4,39,6,20,1601388360,"~/vegaMotor.py"
+-'  54  22  ~/vegaMotor.py
+|4,39,54,22,1601388087,"~/vegaMotor.py"
+-'  88  22  ~/vegaMotor.py
+|4,39,88,22,1601388087,"~/vegaMotor.py"
+-'  68  22  ~/vegaMotor.py
+|4,39,68,22,1601388087,"~/vegaMotor.py"
+-'  65  22  ~/vegaMotor.py
+|4,39,65,22,1601388087,"~/vegaMotor.py"
+-'  54  22  ~/vegaMotor.py
+|4,39,54,22,1601388087,"~/vegaMotor.py"
+-'  88  22  ~/vegaMotor.py
+|4,39,88,22,1601388087,"~/vegaMotor.py"
+-'  68  22  ~/vegaMotor.py
+|4,39,68,22,1601388087,"~/vegaMotor.py"
+-'  65  22  ~/vegaMotor.py
+|4,39,65,22,1601388087,"~/vegaMotor.py"
+-'  91  22  ~/vegaMotor.py
+|4,39,91,22,1601388087,"~/vegaMotor.py"
+-'  54  22  ~/vegaMotor.py
+|4,39,54,22,1601388087,"~/vegaMotor.py"
+-'  88  22  ~/vegaMotor.py
+|4,39,88,22,1601388087,"~/vegaMotor.py"
+-'  68  22  ~/vegaMotor.py
+|4,39,68,22,1601388087,"~/vegaMotor.py"
+-'  54  22  ~/vegaMotor.py
+|4,39,54,22,1601388087,"~/vegaMotor.py"
+-'  65  22  ~/vegaMotor.py
+|4,39,65,22,1601388087,"~/vegaMotor.py"
+-'  54  22  ~/vegaMotor.py
+|4,39,54,22,1601388087,"~/vegaMotor.py"
+-'  54  22  ~/vegaMotor.py
+|4,39,54,22,1601388087,"~/vegaMotor.py"
+-'  92  22  ~/vegaMotor.py
+|4,39,92,22,1601388086,"~/vegaMotor.py"
+-'  55  22  ~/vegaMotor.py
+|4,39,55,22,1601388086,"~/vegaMotor.py"
+-'  89  22  ~/vegaMotor.py
+|4,39,89,22,1601388086,"~/vegaMotor.py"
+-'  69  22  ~/vegaMotor.py
+|4,39,69,22,1601388086,"~/vegaMotor.py"
+-'  66  22  ~/vegaMotor.py
+|4,39,66,22,1601388086,"~/vegaMotor.py"
+-'  92  22  ~/vegaMotor.py
+|4,39,92,22,1601388086,"~/vegaMotor.py"
+-'  55  22  ~/vegaMotor.py
+|4,39,55,22,1601388086,"~/vegaMotor.py"
+-'  89  22  ~/vegaMotor.py
+|4,39,89,22,1601388086,"~/vegaMotor.py"
+-'  69  22  ~/vegaMotor.py
+|4,39,69,22,1601388086,"~/vegaMotor.py"
+-'  66  22  ~/vegaMotor.py
+|4,39,66,22,1601388086,"~/vegaMotor.py"
+-'  92  22  ~/vegaMotor.py
+|4,39,92,22,1601388086,"~/vegaMotor.py"
+-'  55  22  ~/vegaMotor.py
+|4,39,55,22,1601388086,"~/vegaMotor.py"
+-'  89  22  ~/vegaMotor.py
+|4,39,89,22,1601388086,"~/vegaMotor.py"
+-'  69  22  ~/vegaMotor.py
+|4,39,69,22,1601388086,"~/vegaMotor.py"
+-'  55  22  ~/vegaMotor.py
+|4,39,55,22,1601388086,"~/vegaMotor.py"
+-'  66  22  ~/vegaMotor.py
+|4,39,66,22,1601388086,"~/vegaMotor.py"
+-'  55  22  ~/vegaMotor.py
+|4,39,55,22,1601388086,"~/vegaMotor.py"
+-'  55  22  ~/vegaMotor.py
+|4,39,55,22,1601388086,"~/vegaMotor.py"
+-'  83  28  ~/vegaMotor.py
+|4,39,83,28,1601387994,"~/vegaMotor.py"
+-'  47  28  ~/vegaMotor.py
+|4,39,47,28,1601387994,"~/vegaMotor.py"
+-'  48  28  ~/vegaMotor.py
+|4,39,48,28,1601387994,"~/vegaMotor.py"
+-'  57  28  ~/vegaMotor.py
+|4,39,57,28,1601387994,"~/vegaMotor.py"
+-'  60  28  ~/vegaMotor.py
+|4,39,60,28,1601387994,"~/vegaMotor.py"
+-'  83  28  ~/vegaMotor.py
+|4,39,83,28,1601387994,"~/vegaMotor.py"
+-'  47  28  ~/vegaMotor.py
+|4,39,47,28,1601387994,"~/vegaMotor.py"
+-'  48  28  ~/vegaMotor.py
+|4,39,48,28,1601387994,"~/vegaMotor.py"
+-'  57  28  ~/vegaMotor.py
+|4,39,57,28,1601387994,"~/vegaMotor.py"
+-'  60  28  ~/vegaMotor.py
+|4,39,60,28,1601387994,"~/vegaMotor.py"
+-'  83  28  ~/vegaMotor.py
+|4,39,83,28,1601387994,"~/vegaMotor.py"
+-'  47  28  ~/vegaMotor.py
+|4,39,47,28,1601387994,"~/vegaMotor.py"
+-'  48  28  ~/vegaMotor.py
+|4,39,48,28,1601387994,"~/vegaMotor.py"
+-'  57  28  ~/vegaMotor.py
+|4,39,57,28,1601387994,"~/vegaMotor.py"
+-'  60  28  ~/vegaMotor.py
+|4,39,60,28,1601387994,"~/vegaMotor.py"
+-'  47  28  ~/vegaMotor.py
+|4,39,47,28,1601387994,"~/vegaMotor.py"
+-'  48  28  ~/vegaMotor.py
+|4,39,48,28,1601387994,"~/vegaMotor.py"
+-'  55  28  ~/vegaMotor.py
+|4,39,55,28,1601387994,"~/vegaMotor.py"
+-'  57  28  ~/vegaMotor.py
+|4,39,57,28,1601387994,"~/vegaMotor.py"
+-'  47  28  ~/vegaMotor.py
+|4,39,47,28,1601387994,"~/vegaMotor.py"
+-'  48  28  ~/vegaMotor.py
+|4,39,48,28,1601387994,"~/vegaMotor.py"
+-'  47  28  ~/vegaMotor.py
+|4,39,47,28,1601387994,"~/vegaMotor.py"
+-'  48  28  ~/vegaMotor.py
+|4,39,48,28,1601387994,"~/vegaMotor.py"
+-'  48  28  ~/vegaMotor.py
+|4,39,48,28,1601387990,"~/vegaMotor.py"
+-'  50  15  ~/vegaMotor.py
+|4,39,50,15,1601387902,"~/vegaMotor.py"
+-'  51  15  ~/vegaMotor.py
+|4,39,51,15,1601387902,"~/vegaMotor.py"
+-'  42  15  ~/vegaMotor.py
+|4,39,42,15,1601387902,"~/vegaMotor.py"
 -'  43  15  ~/vegaMotor.py
-|4,39,43,15,1601387015,"~/vegaMotor.py"
--'  39  0  ~/vegaMotor.py
-|4,39,39,0,1601386924,"~/vegaMotor.py"
--'  38  0  ~/vegaMotor.py
-|4,39,38,0,1601386922,"~/vegaMotor.py"
--'  4  0  ~/vegaMotor.py
-|4,39,4,0,1601386272,"~/vegaMotor.py"
--'  4  0  ~/vegaMotor.py
-|4,39,4,0,1601386272,"~/vegaMotor.py"
--'  1  0  ~/vegaM
-|4,39,1,0,1601386269,"~/vegaM"
--'  1  0  ~/vegaM
-|4,39,1,0,1601386269,"~/vegaM"
--'  1  0  ~/vegaM
-|4,39,1,0,1601386269,"~/vegaM"
--'  1  0  ~/vegaM
-|4,39,1,0,1601386269,"~/vegaM"
--'  1  0  ~/vegaMotor.py
-|4,39,1,0,1601386216,"~/vegaMotor.py"
--'  1  0  ~/vegaMotor.py
-|4,39,1,0,1601386216,"~/vegaMotor.py"
--'  1  0  ~/vegaMotor.py
-|4,39,1,0,1601386216,"~/vegaMotor.py"
--'  1  0  ~/vegaMotor.py
-|4,39,1,0,1601386216,"~/vegaMotor.py"
--'  4  0  ~/vegaMotor.py
-|4,39,4,0,1601386168,"~/vegaMotor.py"
--'  4  0  ~/vegaMotor.py
-|4,39,4,0,1601386168,"~/vegaMotor.py"
--'  4  0  ~/vegaMotor.py
-|4,39,4,0,1601386168,"~/vegaMotor.py"
--'  4  0  ~/vegaMotor.py
-|4,39,4,0,1601386168,"~/vegaMotor.py"
--'  4  0  ~/vegaMotor.py
-|4,39,4,0,1601386109,"~/vegaMotor.py"
--'  4  0  ~/vegaMotor.py
-|4,39,4,0,1601386109,"~/vegaMotor.py"
--'  4  0  ~/vegaMotor.py
-|4,39,4,0,1601386081,"~/vegaMotor.py"
--'  4  0  ~/vegaMotor.py
-|4,39,4,0,1601386081,"~/vegaMotor.py"
--'  1  0  ~/vegaMotor.py
-|4,39,1,0,1601386074,"~/vegaMotor.py"
--'  1  0  ~/vegaMotor.py
-|4,39,1,0,1601386074,"~/vegaMotor.py"
--'  1  0  ~/vegaMotor.py
-|4,39,1,0,1601386074,"~/vegaMotor.py"
--'  1  0  ~/vegaMotor.py
-|4,39,1,0,1601386074,"~/vegaMotor.py"
--'  1  0  ~/vegaMotor.py
-|4,39,1,0,1601386074,"~/vegaMotor.py"
--'  1  0  ~/vegaMotor.py
-|4,39,1,0,1601386074,"~/vegaMotor.py"
--'  1  0  ~/vegaMotor.py
-|4,39,1,0,1601385580,"~/vegaMotor.py"
--'  1  0  ~/vegaMotor.py
-|4,39,1,0,1601385580,"~/vegaMotor.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
--'  17  0  ~/robotcar.py
-|4,39,17,0,1601385559,"~/robotcar.py"
+|4,39,43,15,1601387902,"~/vegaMotor.py"
+-'  50  15  ~/vegaMotor.py
+|4,39,50,15,1601387902,"~/vegaMotor.py"
+-'  51  15  ~/vegaMotor.py
+|4,39,51,15,1601387902,"~/vegaMotor.py"
+-'  42  15  ~/vegaMotor.py
+|4,39,42,15,1601387902,"~/vegaMotor.py"
+-'  43  15  ~/vegaMotor.py
+|4,39,43,15,1601387902,"~/vegaMotor.py"
+-'  50  15  ~/vegaMotor.py
+|4,39,50,15,1601387902,"~/vegaMotor.py"
+-'  51  15  ~/vegaMotor.py
+|4,39,51,15,1601387902,"~/vegaMotor.py"
+-'  42  15  ~/vegaMotor.py
+|4,39,42,15,1601387902,"~/vegaMotor.py"
 
 # History of marks within files (newest to oldest):
 
 > ~/vegaMotor.py
-	*	1601387014	0
-	"	43	15
-	^	43	16
-	.	43	15
+	*	1601458081	0
+	"	38	22
+	^	31	27
+	.	31	26
 	+	6	44
-	+	14	0
+	+	15	0
+	+	29	35
+	+	31	34
+	+	44	25
+	+	42	28
+	+	44	34
+	+	43	0
+	+	50	34
+	+	54	15
+	+	53	26
+	+	83	0
+	+	91	22
+	+	34	32
+	+	35	32
+	+	47	32
+	+	48	32
+	+	33	32
+	+	46	32
+	+	7	18
+	+	8	18
+	+	9	18
+	+	10	18
+	+	11	18
+	+	12	18
+	+	17	26
+	+	18	26
+	+	19	26
+	+	20	26
+	+	21	26
+	+	22	26
+	+	29	35
+	+	6	21
+	+	7	0
+	+	23	37
+	+	26	8
+	+	14	30
+	+	26	30
+	+	25	39
+	+	29	35
+	+	31	0
+	+	30	0
 	+	27	0
-	+	28	34
-	+	39	25
-	+	37	28
-	+	39	34
-	+	38	0
-	+	43	15
+	+	32	24
+	+	33	24
+	+	34	24
+	+	35	24
+	+	37	32
+	+	38	32
+	+	37	52
+	+	38	53
+	+	37	12
+	+	38	12
+	+	45	24
+	+	46	24
+	+	47	24
+	+	48	24
+	+	50	28
+	+	51	28
+	+	50	37
+	+	51	37
+	+	84	24
+	+	85	24
+	+	86	24
+	+	87	38
+	+	89	36
+	+	78	0
+	+	58	7
+	+	57	30
+	+	58	39
+	+	62	12
+	+	64	55
+	+	50	48
+	+	51	49
+	+	78	0
+	+	68	29
+	+	69	0
+	+	70	22
+	+	57	23
+	+	77	55
+	+	82	0
+	+	44	27
+	+	31	26
 
 > ~/vegaM
 	*	1601386268	0
