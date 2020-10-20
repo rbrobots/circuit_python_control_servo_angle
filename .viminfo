@@ -10,13 +10,20 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~Msle0~/\<servo\>
+
 # Command Line History (newest to oldest):
 :q!
-|2,0,1601458082,,"q!"
+|2,0,1603202363,,"q!"
 :wq!
-|2,0,1601395500,,"wq!"
+|2,0,1603192544,,"wq!"
+:q
+|2,0,1603122754,,"q"
 
 # Search String History (newest to oldest):
+? \<servo\>
+|2,1,1603192512,,"\\<servo\\>"
 
 # Expression History (newest to oldest):
 
@@ -25,406 +32,368 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
-""1	CHAR	0
-	R
-|3,1,1,0,1,0,1601391188,"R"
+"1	LINE	0
+	kit = ServoKit(channels=16)
+|3,0,1,1,1,0,1603123000,"kit = ServoKit(channels=16)"
 "2	LINE	0
-	        print("initialised")
-|3,0,2,1,1,0,1601388433,"        print(\"initialised\")"
+	servo1.angle=45
+|3,0,2,1,1,0,1603122711,"servo1.angle=45"
 "3	LINE	0
-	
-|3,0,3,1,1,0,1601388345,""
+	time.sleep(1)
+|3,0,3,1,1,0,1603122710,"time.sleep(1)"
 "4	LINE	0
-	        GPIO.output(18,GPIO.LOW)
-|3,0,4,1,1,0,1601388344,"        GPIO.output(18,GPIO.LOW)"
+	servo1.angle=0
+|3,0,4,1,1,0,1603122709,"servo1.angle=0"
 "5	LINE	0
-	        GPIO.output(11,GPIO.LOW)
-|3,0,5,1,1,0,1601388343,"        GPIO.output(11,GPIO.LOW)"
+	time.sleep(1)
+|3,0,5,1,1,0,1603122709,"time.sleep(1)"
 "6	LINE	0
-	        GPIO.output(16,GPIO.HIGH)
-|3,0,6,1,1,0,1601388343,"        GPIO.output(16,GPIO.HIGH)"
-"7	LINE	0
-	        GPIO.output(13,GP
-|3,0,7,1,1,0,1601388342,"        GPIO.output(13,GP"
-"8	LINE	0
-	            GPIO.cleanup()
-	
-|3,0,8,1,2,0,1601386909,"            GPIO.cleanup()",""
-"9	LINE	0
-	    GPIO.cleanup()
-|3,0,9,1,1,0,1601386908,"    GPIO.cleanup()"
-"-	CHAR	0
-	R
-|3,0,36,0,1,0,1601391188,"R"
+	servo1.angle=80
+|3,0,6,1,1,0,1603122708,"servo1.angle=80"
+""-	CHAR	0
+	i
+|3,1,36,0,1,0,1603131702,"i"
 
 # File marks:
-'0  38  22  ~/vegaMotor.py
-|4,48,38,22,1601458082,"~/vegaMotor.py"
-'1  91  22  ~/vegaMotor.py
-|4,49,91,22,1601395500,"~/vegaMotor.py"
-'2  91  22  ~/vegaMotor.py
-|4,50,91,22,1601395500,"~/vegaMotor.py"
-'3  31  26  ~/vegaMotor.py
-|4,51,31,26,1601394186,"~/vegaMotor.py"
-'4  31  26  ~/vegaMotor.py
-|4,52,31,26,1601394186,"~/vegaMotor.py"
-'5  31  26  ~/vegaMotor.py
-|4,53,31,26,1601394186,"~/vegaMotor.py"
-'6  31  26  ~/vegaMotor.py
-|4,54,31,26,1601394186,"~/vegaMotor.py"
-'7  20  4  ~/vegaMotor.py
-|4,55,20,4,1601393997,"~/vegaMotor.py"
-'8  20  4  ~/vegaMotor.py
-|4,56,20,4,1601393997,"~/vegaMotor.py"
-'9  20  4  ~/vegaMotor.py
-|4,57,20,4,1601393997,"~/vegaMotor.py"
+'0  1  21  ~/vegaMotor.py
+|4,48,1,21,1603202363,"~/vegaMotor.py"
+'1  22  9  ~/vegaMain.py
+|4,49,22,9,1603202355,"~/vegaMain.py"
+'2  1  21  ~/vegaMotor.py
+|4,50,1,21,1603196304,"~/vegaMotor.py"
+'3  298  43  /usr/local/lib/python3.7/dist-packages/busio.py
+|4,51,298,43,1603196185,"/usr/local/lib/python3.7/dist-packages/busio.py"
+'4  152  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,52,152,0,1603194946,"/usr/local/lib/python3.7/dist-packages/board.py"
+'5  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,53,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+'6  38  0  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/__init__.py
+|4,54,38,0,1603194547,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/__init__.py"
+'7  40  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,55,40,0,1603194421,"/usr/local/lib/python3.7/dist-packages/board.py"
+'8  40  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,56,40,0,1603194421,"/usr/local/lib/python3.7/dist-packages/board.py"
+'9  1  21  ~/vegaMotor.py
+|4,57,1,21,1603193312,"~/vegaMotor.py"
 
 # Jumplist (newest first):
--'  38  22  ~/vegaMotor.py
-|4,39,38,22,1601458082,"~/vegaMotor.py"
--'  91  22  ~/vegaMotor.py
-|4,39,91,22,1601458029,"~/vegaMotor.py"
--'  91  22  ~/vegaMotor.py
-|4,39,91,22,1601395500,"~/vegaMotor.py"
--'  31  26  ~/vegaMotor.py
-|4,39,31,26,1601394187,"~/vegaMotor.py"
--'  31  26  ~/vegaMotor.py
-|4,39,31,26,1601394187,"~/vegaMotor.py"
--'  31  26  ~/vegaMotor.py
-|4,39,31,26,1601394186,"~/vegaMotor.py"
--'  20  4  ~/vegaMotor.py
-|4,39,20,4,1601393997,"~/vegaMotor.py"
--'  20  4  ~/vegaMotor.py
-|4,39,20,4,1601393997,"~/vegaMotor.py"
--'  20  4  ~/vegaMotor.py
-|4,39,20,4,1601393997,"~/vegaMotor.py"
--'  58  12  ~/vegaMotor.py
-|4,39,58,12,1601393299,"~/vegaMotor.py"
--'  58  12  ~/vegaMotor.py
-|4,39,58,12,1601393299,"~/vegaMotor.py"
--'  58  12  ~/vegaMotor.py
-|4,39,58,12,1601393299,"~/vegaMotor.py"
--'  58  12  ~/vegaMotor.py
-|4,39,58,12,1601392390,"~/vegaMotor.py"
--'  16  12  ~/vegaMotor.py
-|4,39,16,12,1601391382,"~/vegaMotor.py"
--'  16  12  ~/vegaMotor.py
-|4,39,16,12,1601391382,"~/vegaMotor.py"
--'  16  12  ~/vegaMotor.py
-|4,39,16,12,1601391382,"~/vegaMotor.py"
--'  16  12  ~/vegaMotor.py
-|4,39,16,12,1601391382,"~/vegaMotor.py"
--'  16  12  ~/vegaMotor.py
-|4,39,16,12,1601391381,"~/vegaMotor.py"
--'  18  40  ~/vegaMotor.py
-|4,39,18,40,1601390870,"~/vegaMotor.py"
--'  18  40  ~/vegaMotor.py
-|4,39,18,40,1601390870,"~/vegaMotor.py"
--'  18  40  ~/vegaMotor.py
-|4,39,18,40,1601390870,"~/vegaMotor.py"
--'  18  40  ~/vegaMotor.py
-|4,39,18,40,1601390870,"~/vegaMotor.py"
--'  18  40  ~/vegaMotor.py
-|4,39,18,40,1601390870,"~/vegaMotor.py"
--'  16  40  ~/vegaMotor.py
-|4,39,16,40,1601389397,"~/vegaMotor.py"
--'  6  20  ~/vegaMotor.py
-|4,39,6,20,1601388366,"~/vegaMotor.py"
--'  6  20  ~/vegaMotor.py
-|4,39,6,20,1601388366,"~/vegaMotor.py"
--'  6  20  ~/vegaMotor.py
-|4,39,6,20,1601388366,"~/vegaMotor.py"
--'  6  20  ~/vegaMotor.py
-|4,39,6,20,1601388366,"~/vegaMotor.py"
--'  6  20  ~/vegaMotor.py
-|4,39,6,20,1601388366,"~/vegaMotor.py"
--'  6  20  ~/vegaMotor.py
-|4,39,6,20,1601388366,"~/vegaMotor.py"
--'  6  20  ~/vegaMotor.py
-|4,39,6,20,1601388360,"~/vegaMotor.py"
--'  54  22  ~/vegaMotor.py
-|4,39,54,22,1601388087,"~/vegaMotor.py"
--'  88  22  ~/vegaMotor.py
-|4,39,88,22,1601388087,"~/vegaMotor.py"
--'  68  22  ~/vegaMotor.py
-|4,39,68,22,1601388087,"~/vegaMotor.py"
--'  65  22  ~/vegaMotor.py
-|4,39,65,22,1601388087,"~/vegaMotor.py"
--'  54  22  ~/vegaMotor.py
-|4,39,54,22,1601388087,"~/vegaMotor.py"
--'  88  22  ~/vegaMotor.py
-|4,39,88,22,1601388087,"~/vegaMotor.py"
--'  68  22  ~/vegaMotor.py
-|4,39,68,22,1601388087,"~/vegaMotor.py"
--'  65  22  ~/vegaMotor.py
-|4,39,65,22,1601388087,"~/vegaMotor.py"
--'  91  22  ~/vegaMotor.py
-|4,39,91,22,1601388087,"~/vegaMotor.py"
--'  54  22  ~/vegaMotor.py
-|4,39,54,22,1601388087,"~/vegaMotor.py"
--'  88  22  ~/vegaMotor.py
-|4,39,88,22,1601388087,"~/vegaMotor.py"
--'  68  22  ~/vegaMotor.py
-|4,39,68,22,1601388087,"~/vegaMotor.py"
--'  54  22  ~/vegaMotor.py
-|4,39,54,22,1601388087,"~/vegaMotor.py"
--'  65  22  ~/vegaMotor.py
-|4,39,65,22,1601388087,"~/vegaMotor.py"
--'  54  22  ~/vegaMotor.py
-|4,39,54,22,1601388087,"~/vegaMotor.py"
--'  54  22  ~/vegaMotor.py
-|4,39,54,22,1601388087,"~/vegaMotor.py"
--'  92  22  ~/vegaMotor.py
-|4,39,92,22,1601388086,"~/vegaMotor.py"
--'  55  22  ~/vegaMotor.py
-|4,39,55,22,1601388086,"~/vegaMotor.py"
--'  89  22  ~/vegaMotor.py
-|4,39,89,22,1601388086,"~/vegaMotor.py"
--'  69  22  ~/vegaMotor.py
-|4,39,69,22,1601388086,"~/vegaMotor.py"
--'  66  22  ~/vegaMotor.py
-|4,39,66,22,1601388086,"~/vegaMotor.py"
--'  92  22  ~/vegaMotor.py
-|4,39,92,22,1601388086,"~/vegaMotor.py"
--'  55  22  ~/vegaMotor.py
-|4,39,55,22,1601388086,"~/vegaMotor.py"
--'  89  22  ~/vegaMotor.py
-|4,39,89,22,1601388086,"~/vegaMotor.py"
--'  69  22  ~/vegaMotor.py
-|4,39,69,22,1601388086,"~/vegaMotor.py"
--'  66  22  ~/vegaMotor.py
-|4,39,66,22,1601388086,"~/vegaMotor.py"
--'  92  22  ~/vegaMotor.py
-|4,39,92,22,1601388086,"~/vegaMotor.py"
--'  55  22  ~/vegaMotor.py
-|4,39,55,22,1601388086,"~/vegaMotor.py"
--'  89  22  ~/vegaMotor.py
-|4,39,89,22,1601388086,"~/vegaMotor.py"
--'  69  22  ~/vegaMotor.py
-|4,39,69,22,1601388086,"~/vegaMotor.py"
--'  55  22  ~/vegaMotor.py
-|4,39,55,22,1601388086,"~/vegaMotor.py"
--'  66  22  ~/vegaMotor.py
-|4,39,66,22,1601388086,"~/vegaMotor.py"
--'  55  22  ~/vegaMotor.py
-|4,39,55,22,1601388086,"~/vegaMotor.py"
--'  55  22  ~/vegaMotor.py
-|4,39,55,22,1601388086,"~/vegaMotor.py"
--'  83  28  ~/vegaMotor.py
-|4,39,83,28,1601387994,"~/vegaMotor.py"
--'  47  28  ~/vegaMotor.py
-|4,39,47,28,1601387994,"~/vegaMotor.py"
--'  48  28  ~/vegaMotor.py
-|4,39,48,28,1601387994,"~/vegaMotor.py"
--'  57  28  ~/vegaMotor.py
-|4,39,57,28,1601387994,"~/vegaMotor.py"
--'  60  28  ~/vegaMotor.py
-|4,39,60,28,1601387994,"~/vegaMotor.py"
--'  83  28  ~/vegaMotor.py
-|4,39,83,28,1601387994,"~/vegaMotor.py"
--'  47  28  ~/vegaMotor.py
-|4,39,47,28,1601387994,"~/vegaMotor.py"
--'  48  28  ~/vegaMotor.py
-|4,39,48,28,1601387994,"~/vegaMotor.py"
--'  57  28  ~/vegaMotor.py
-|4,39,57,28,1601387994,"~/vegaMotor.py"
--'  60  28  ~/vegaMotor.py
-|4,39,60,28,1601387994,"~/vegaMotor.py"
--'  83  28  ~/vegaMotor.py
-|4,39,83,28,1601387994,"~/vegaMotor.py"
--'  47  28  ~/vegaMotor.py
-|4,39,47,28,1601387994,"~/vegaMotor.py"
--'  48  28  ~/vegaMotor.py
-|4,39,48,28,1601387994,"~/vegaMotor.py"
--'  57  28  ~/vegaMotor.py
-|4,39,57,28,1601387994,"~/vegaMotor.py"
--'  60  28  ~/vegaMotor.py
-|4,39,60,28,1601387994,"~/vegaMotor.py"
--'  47  28  ~/vegaMotor.py
-|4,39,47,28,1601387994,"~/vegaMotor.py"
--'  48  28  ~/vegaMotor.py
-|4,39,48,28,1601387994,"~/vegaMotor.py"
--'  55  28  ~/vegaMotor.py
-|4,39,55,28,1601387994,"~/vegaMotor.py"
--'  57  28  ~/vegaMotor.py
-|4,39,57,28,1601387994,"~/vegaMotor.py"
--'  47  28  ~/vegaMotor.py
-|4,39,47,28,1601387994,"~/vegaMotor.py"
--'  48  28  ~/vegaMotor.py
-|4,39,48,28,1601387994,"~/vegaMotor.py"
--'  47  28  ~/vegaMotor.py
-|4,39,47,28,1601387994,"~/vegaMotor.py"
--'  48  28  ~/vegaMotor.py
-|4,39,48,28,1601387994,"~/vegaMotor.py"
--'  48  28  ~/vegaMotor.py
-|4,39,48,28,1601387990,"~/vegaMotor.py"
--'  50  15  ~/vegaMotor.py
-|4,39,50,15,1601387902,"~/vegaMotor.py"
--'  51  15  ~/vegaMotor.py
-|4,39,51,15,1601387902,"~/vegaMotor.py"
--'  42  15  ~/vegaMotor.py
-|4,39,42,15,1601387902,"~/vegaMotor.py"
--'  43  15  ~/vegaMotor.py
-|4,39,43,15,1601387902,"~/vegaMotor.py"
--'  50  15  ~/vegaMotor.py
-|4,39,50,15,1601387902,"~/vegaMotor.py"
--'  51  15  ~/vegaMotor.py
-|4,39,51,15,1601387902,"~/vegaMotor.py"
--'  42  15  ~/vegaMotor.py
-|4,39,42,15,1601387902,"~/vegaMotor.py"
--'  43  15  ~/vegaMotor.py
-|4,39,43,15,1601387902,"~/vegaMotor.py"
--'  50  15  ~/vegaMotor.py
-|4,39,50,15,1601387902,"~/vegaMotor.py"
--'  51  15  ~/vegaMotor.py
-|4,39,51,15,1601387902,"~/vegaMotor.py"
--'  42  15  ~/vegaMotor.py
-|4,39,42,15,1601387902,"~/vegaMotor.py"
+-'  1  21  ~/vegaMotor.py
+|4,39,1,21,1603202363,"~/vegaMotor.py"
+-'  22  9  ~/vegaMain.py
+|4,39,22,9,1603202355,"~/vegaMain.py"
+-'  22  9  ~/vegaMain.py
+|4,39,22,9,1603202355,"~/vegaMain.py"
+-'  1  21  ~/vegaMotor.py
+|4,39,1,21,1603196304,"~/vegaMotor.py"
+-'  1  21  ~/vegaMotor.py
+|4,39,1,21,1603196304,"~/vegaMotor.py"
+-'  298  43  /usr/local/lib/python3.7/dist-packages/busio.py
+|4,39,298,43,1603196185,"/usr/local/lib/python3.7/dist-packages/busio.py"
+-'  298  43  /usr/local/lib/python3.7/dist-packages/busio.py
+|4,39,298,43,1603196185,"/usr/local/lib/python3.7/dist-packages/busio.py"
+-'  298  43  /usr/local/lib/python3.7/dist-packages/busio.py
+|4,39,298,43,1603196185,"/usr/local/lib/python3.7/dist-packages/busio.py"
+-'  298  43  /usr/local/lib/python3.7/dist-packages/busio.py
+|4,39,298,43,1603196185,"/usr/local/lib/python3.7/dist-packages/busio.py"
+-'  298  43  /usr/local/lib/python3.7/dist-packages/busio.py
+|4,39,298,43,1603196185,"/usr/local/lib/python3.7/dist-packages/busio.py"
+-'  298  43  /usr/local/lib/python3.7/dist-packages/busio.py
+|4,39,298,43,1603196185,"/usr/local/lib/python3.7/dist-packages/busio.py"
+-'  298  43  /usr/local/lib/python3.7/dist-packages/busio.py
+|4,39,298,43,1603196185,"/usr/local/lib/python3.7/dist-packages/busio.py"
+-'  298  43  /usr/local/lib/python3.7/dist-packages/busio.py
+|4,39,298,43,1603196185,"/usr/local/lib/python3.7/dist-packages/busio.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/busio.py
+|4,39,1,0,1603194950,"/usr/local/lib/python3.7/dist-packages/busio.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/busio.py
+|4,39,1,0,1603194950,"/usr/local/lib/python3.7/dist-packages/busio.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/busio.py
+|4,39,1,0,1603194950,"/usr/local/lib/python3.7/dist-packages/busio.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/busio.py
+|4,39,1,0,1603194950,"/usr/local/lib/python3.7/dist-packages/busio.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/busio.py
+|4,39,1,0,1603194950,"/usr/local/lib/python3.7/dist-packages/busio.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/busio.py
+|4,39,1,0,1603194950,"/usr/local/lib/python3.7/dist-packages/busio.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/busio.py
+|4,39,1,0,1603194950,"/usr/local/lib/python3.7/dist-packages/busio.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/busio.py
+|4,39,1,0,1603194950,"/usr/local/lib/python3.7/dist-packages/busio.py"
+-'  152  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,152,0,1603194946,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  152  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,152,0,1603194946,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  152  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,152,0,1603194946,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  152  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,152,0,1603194946,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  152  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,152,0,1603194946,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  152  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,152,0,1603194946,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  152  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,152,0,1603194946,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  152  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,152,0,1603194946,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  152  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,152,0,1603194946,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  152  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,152,0,1603194946,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  152  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,152,0,1603194946,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  152  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,152,0,1603194946,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  152  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,152,0,1603194946,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  152  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,152,0,1603194946,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  152  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,152,0,1603194946,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  152  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,152,0,1603194946,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  40  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,40,0,1603194904,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  40  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,40,0,1603194904,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  40  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,40,0,1603194904,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  40  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,40,0,1603194904,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  40  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,40,0,1603194904,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  40  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,40,0,1603194904,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  40  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,40,0,1603194904,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  40  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,40,0,1603194904,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  40  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,40,0,1603194904,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  40  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,40,0,1603194904,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  40  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,40,0,1603194904,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  40  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,40,0,1603194904,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  40  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,40,0,1603194904,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  40  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,40,0,1603194904,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  40  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,40,0,1603194904,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  40  0  /usr/local/lib/python3.7/dist-packages/board.py
+|4,39,40,0,1603194904,"/usr/local/lib/python3.7/dist-packages/board.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  19  27  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,19,27,1603194665,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,1,0,1603194578,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,1,0,1603194578,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,1,0,1603194578,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,1,0,1603194578,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,1,0,1603194578,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,1,0,1603194578,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,1,0,1603194578,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,1,0,1603194578,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,1,0,1603194578,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,1,0,1603194578,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,1,0,1603194578,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,1,0,1603194578,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,1,0,1603194578,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,1,0,1603194578,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
+-'  1  0  /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+|4,39,1,0,1603194578,"/usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py"
 
 # History of marks within files (newest to oldest):
 
 > ~/vegaMotor.py
-	*	1601458081	0
-	"	38	22
-	^	31	27
-	.	31	26
-	+	6	44
-	+	15	0
-	+	29	35
-	+	31	34
-	+	44	25
-	+	42	28
-	+	44	34
-	+	43	0
-	+	50	34
-	+	54	15
-	+	53	26
-	+	83	0
-	+	91	22
-	+	34	32
-	+	35	32
-	+	47	32
-	+	48	32
-	+	33	32
-	+	46	32
-	+	7	18
-	+	8	18
-	+	9	18
-	+	10	18
-	+	11	18
-	+	12	18
-	+	17	26
-	+	18	26
-	+	19	26
-	+	20	26
-	+	21	26
-	+	22	26
-	+	29	35
-	+	6	21
-	+	7	0
-	+	23	37
-	+	26	8
+	*	1603202361	0
+	"	1	21
+	^	16	22
+	.	16	21
+	+	16	21
+
+> ~/vegaMain.py
+	*	1603202354	0
+	"	22	9
+	^	19	24
+	.	19	23
+	+	7	4
+	+	2	0
+	+	6	4
+	+	3	13
+	+	1	0
+	+	8	4
+	+	9	4
+	+	10	4
+	+	11	4
+	+	18	4
+	+	14	4
+	+	13	19
+	+	6	0
+	+	8	4
+	+	9	4
+	+	11	4
+	+	10	4
+	+	8	0
+	+	9	0
+	+	10	0
+	+	11	0
+	+	14	0
+	+	18	34
+	+	19	23
+
+> /usr/local/lib/python3.7/dist-packages/busio.py
+	*	1603196182	0
+	"	298	43
+
+> /usr/local/lib/python3.7/dist-packages/board.py
+	*	1603194942	0
+	"	152	0
+
+> /usr/local/lib/python3.7/dist-packages/adafruit_blinka/agnostic/__init__.py
+	*	1603194663	0
+	"	19	27
+	^	19	28
+
+> /usr/local/lib/python3.7/dist-packages/adafruit_blinka/__init__.py
+	*	1603194546	0
+	"	38	0
+
+> ~/vegaServo.py
+	*	1603193158	0
+	"	30	0
+	^	13	63
+	.	13	63
+	+	2	17
+	+	3	36
+	+	4	32
 	+	14	30
-	+	26	30
-	+	25	39
-	+	29	35
-	+	31	0
-	+	30	0
-	+	27	0
-	+	32	24
-	+	33	24
-	+	34	24
-	+	35	24
-	+	37	32
-	+	38	32
-	+	37	52
-	+	38	53
-	+	37	12
-	+	38	12
-	+	45	24
-	+	46	24
-	+	47	24
-	+	48	24
-	+	50	28
-	+	51	28
-	+	50	37
-	+	51	37
-	+	84	24
-	+	85	24
-	+	86	24
-	+	87	38
-	+	89	36
-	+	78	0
-	+	58	7
-	+	57	30
-	+	58	39
-	+	62	12
-	+	64	55
-	+	50	48
-	+	51	49
-	+	78	0
-	+	68	29
-	+	69	0
-	+	70	22
-	+	57	23
-	+	77	55
-	+	82	0
-	+	44	27
-	+	31	26
-
-> ~/vegaM
-	*	1601386268	0
-	"	1	0
-
-> ~/robotcar.py
-	*	1601385557	0
-	"	17	0
-	^	26	25
-	.	26	24
-	+	4	24
-	+	6	23
-	+	7	21
-	+	6	26
-	+	8	27
-	+	9	27
-	+	11	27
-	+	18	29
-	+	22	12
-	+	1	9
-	+	22	13
-	+	31	21
-	+	18	17
-	+	12	0
-	+	20	0
-	+	22	13
-	+	2	10
-	+	24	13
-	+	27	23
-	+	30	4
-	+	31	4
-	+	18	3
-	+	18	7
-	+	20	3
-	+	22	3
-	+	24	3
-	+	27	3
-	+	28	22
-	+	22	15
-	+	31	18
-	+	18	4
-	+	27	0
-	+	25	23
-	+	20	0
-	+	18	4
-	+	19	0
-	+	27	0
-	+	19	16
-	+	13	25
+	+	9	35
+	+	11	30
+	+	16	6
+	+	31	29
+	+	32	27
 	+	16	24
-	+	21	25
-	+	20	7
-	+	21	7
-	+	22	7
-	+	25	7
-	+	23	17
-	+	26	24
+	+	30	0
+	+	12	81
+	+	13	81
+	+	17	28
+	+	21	28
+	+	18	30
+	+	21	37
+	+	18	29
+	+	21	39
+	+	25	20
+	+	22	20
+	+	29	19
+	+	32	27
+	+	10	32
+	+	29	12
+	+	12	38
+	+	13	63
+
+> ~/pca9685_servo.py
+	*	1603131879	0
+	"	12	0
+
+> ~/Adafruit_CircuitPython_PCA9685/examples/pca9685_servo.py
+	*	1603124583	0
+	"	35	0
+	^	36	0
+	.	36	0
+	+	48	0
+	+	47	0
+	+	46	0
+	+	45	0
+	+	44	0
+	+	43	0
+	+	42	0
+	+	41	0
+	+	40	0
+	+	39	0
+	+	38	0
+	+	37	0
+	+	36	0
+
+> ~/Adafruit_CircuitPython_PCA9685/adafruit_pca9685.py
+	*	1603122659	0
+	"	173	0
+
+> ~/servoTest.py
+	*	1603122601	0
+	"	1	0
