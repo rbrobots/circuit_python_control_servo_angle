@@ -44,5 +44,4 @@ for i in range(90):
 time.sleep(1)
 for i in range(90):
     servo1.angle = 90 - i
-time.sleep(2)
 pca.deinit()

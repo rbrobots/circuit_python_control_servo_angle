@@ -13,7 +13,11 @@ class Servo():
         self.servo1 = servo.Servo(self.pca.channels[1], min_pulse=580, max_pulse=2480)
         print("init complete")
 
+    def test(self):
+        print("Testing in servo")
+
     def testServo(self):
+        print("IN TEST SERVO")
         for i in range(180):
             self.servo0.angle = i
         time.sleep(1)

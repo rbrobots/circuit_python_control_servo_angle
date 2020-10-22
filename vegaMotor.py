@@ -1,31 +1,45 @@
-import RPi.GPIO as GPIO
-import time
+#import RPi.GPIO as GPIO
+from board import *
+import time, digitalio, pulseio, sys, busio
+#from adafruit_pca9685 import PCA9685
+#from adafruit_motor import servo
 
 class Motor():
 
     def __init__(self):
-        self.LWB=11
-        self.LWF=13
-        self.RWF=16
-        self.RWB=18
-        self.LWS=32
-        self.RWS=33
+        self.LWB=digitalio.DigitalInOut(D17)
+        self.LWF=digitalio.DigitalInOut(D27)
+        self.RWF=digitalio.DigitalInOut(D23)
+        self.RWB=digitalio.DigitalInOut(D24)
         self.right_wheel_speed=50#default to 50
         self.left_wheel_speed=50#default to 50
         self.duty_cycle=50
-        GPIO.getmode()
-        GPIO.setmode(GPIO.BOARD)
-        GPIO.setup(self.LWB,GPIO.OUT)#LWB
-        GPIO.setup(self.LWF,GPIO.OUT)#LWF
-        GPIO.setup(self.RWF,GPIO.OUT)#RWF
-        GPIO.setup(self.RWB,GPIO.OUT)#RWB
-        GPIO.setup(self.LWS,GPIO.OUT)#EN1
-        GPIO.setup(self.RWS,GPIO.OUT)#EN2
-        self.pwm0=GPIO.PWM(self.LWS,self.left_wheel_speed)
-        self.pwm1=GPIO.PWM(self.RWS,self.right_wheel_speed)
-        self.pwm0.start(self.duty_cycle)
-        self.pwm1.start(self.duty_cycle)
-        print("Motor setup complete")
+        self.LWB.direction = digitalio.Direction.OUTPUT
+        self.LWF.direction = digitalio.Direction.OUTPUT
+        self.RWF.direction = digitalio.Direction.OUTPUT
+        self.RWB.direction = digitalio.Direction.OUTPUT
+        self.pwm_lw = pulseio.PWMOut(D12)
+        self.pwm_rw = pulseio.PWMOut(D13)
+        self.pwm_lw.duty_cycle = 0
+        self.pwm_rw.duty_cycle = 0
+        print("Wheel motor setup complete")
+
+    def drive_forward(self):
+        print("in drive forward")
+        self.LWB.value = False
+        self.RWB.value = False
+        self.RWF.value = True
+        self.LWF.value = True
+        print("drive forward complete")
+    
+    def setup_PWM(self):
+        print("in test motors")
+        self.pwm_lw.frequency = 100#defaults to 100 Hz
+        self.pwm_rw.frequency = 100
+        print("set frequency")
+        self.pwm_lw.duty_cycle = 32767#defaults to 50% duty cycle
+        self.pwm_rw.duty_cycle = 32767
+        print("set duty")
 
     def set_right_wheel_speed(self,speed):
         self.right_wheel_speed=speed
@@ -33,45 +47,41 @@ class Motor():
     def set_left_wheel_speed(self,speed):
         self.left_wheel_speed=speed
 
-    def drive_forward(self):
-        GPIO.output(self.LWB,GPIO.LOW)
-        GPIO.output(self.RWB,GPIO.LOW)
-        GPIO.output(self.LWF,GPIO.HIGH)
-        GPIO.output(self.RWF,GPIO.HIGH)
-
     def drive_backward(self):
-        GPIO.output(self.LWF,GPIO.LOW)
-        GPIO.output(self.RWF,GPIO.LOW)
-        GPIO.output(self.LWB,GPIO.HIGH)
-        GPIO.output(self.RWB,GPIO.HIGH)
+        print("drive")
+        self.RWF.value = False
+        self.LWF.value = False
+        self.RWB.value = True
+        self.LWB.value = True
 
     def turn_right(self):
-        GPIO.output(self.LWF,GPIO.HIGH)
-        GPIO.output(self.RWB,GPIO.HIGH)
-        GPIO.output(self.LWB,GPIO.LOW)
-        GPIO.output(self.RWF,GPIO.LOW)
-
+        print("right")
+        self.LWF.value = False
+        self.RWB.value = False
+        self.LWB.value = True
+        self.RWF.value = True
+        
     def turn_left(self):
-        GPIO.output(self.RWF,GPIO.HIGH)
-        GPIO.output(self.LWB,GPIO.HIGH)
-        GPIO.output(self.RWB,GPIO.LOW)
-        GPIO.output(self.LWF,GPIO.LOW)
+        print("left")
+        self.LWB.value = False
+        self.RWF.value = False
+        self.LWF.value = True
+        self.RWB.value = True
 
     def stop_motors(self):
-        GPIO.output(self.LWF,GPIO.LOW)
-        GPIO.output(self.RWF,GPIO.LOW)
-        GPIO.output(self.LWB,GPIO.LOW)
-        GPIO.output(self.RWB,GPIO.LOW)
-        set_left_wheel_speed(self,0)
-        set_right_wheel_speed(self,0)
-        GPIO.PWM(LWS,0)
-        GPIO.PWM(RWS,0)
+        print("stop")
+        self.LWF.value = False
+        self.LWB.value = False
+        self.RWF.value = False
+        self.RWB.value = False
+        self.pwm_lw.frequency = 0
+        self.pwm_lw.duty_cycle = 0
+        self.pwm_rw.frequency = 0
+        self.pwm_rw.duty_cycle = 0
+
     def update_duty_cycle(self,c):
         self.duty_cycle=c
     def terminate_process(self):
-        self.pwm0.stop()
-        self.pwm1.stop()
-        GPIO.cleanup()
         print("termination complete")
         exit(0)
 
