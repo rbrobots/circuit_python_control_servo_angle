@@ -30,6 +30,8 @@ class Motor():
         self.pca.frequency=50
         self.servo0=servo.Servo(self.pca.channels[0], min_pulse=580, max_pulse=2480)
         self.servo1=servo.Servo(self.pca.channels[1], min_pulse=580, max_pulse=2480)
+        self.servo0_pos = 0 #keep track of pos of servo
+        self.servo1_pos = 0
         print("Servo motor setup complete")
 
     def drive_forward(self):
@@ -91,18 +93,33 @@ class Motor():
         self.duty_cycle=c
 
     def servo_turn_to_angle(self,i,n):#i is channel and n is angle
-        if i==0 and n<=180 and n>=0:
-            for j in range(n):
-                self.servo0.angle=j
-                print(j)
-            time.sleep(2)
-        elif i==1 and n<=90 and n>=0:
-            for j in range(n):
-                self.servo1.angle=j
-                print(j)
-            time.sleep(1)
+        print("n:",n)
+        print("s0 pos:",self.servo0_pos)
+        print("s1 pos:",self.servo1_pos)
+        if i==0 and n<=180 and n>=0:#restrict motion to 180 degrees
+            if n<self.servo0_pos:#if servo needs to move clockwise
+                print("in first loop")
+                for j in range(self.servo0_pos,n,-1):
+                    print(j)
+                    self.servo0.angle = j
+            else:#if servo moves anti-clockwise
+                for j in range(self.servo0_pos,n):
+                    self.servo0.angle=j
+                    print(j)
+                time.sleep(1)
+                self.servo0_pos = n
+        elif i==1 and n<=90 and n>=0:#restrict motion to 90 degrees
+            if n < self.servo1_pos:#clockwise
+                for j in range(self.servo1_pos,n,-1):
+                    self.servo1.angle = j
+            else:#anti-clockwise
+                for j in range(self.servo1_pos,n):
+                    self.servo1.angle = j
+                time.sleep(1)
+            self.servo1_pos = n#set servo pos to current pos in memory
         else:
             print("Unknown input")
+        print("Servo motion complete")
 
     def testServo(self):
         for i in range(180):

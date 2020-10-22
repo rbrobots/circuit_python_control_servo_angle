@@ -15,9 +15,9 @@
 
 # Command Line History (newest to oldest):
 :wq!
-|2,0,1603383328,,"wq!"
+|2,0,1603387403,,"wq!"
 :q!
-|2,0,1603383312,,"q!"
+|2,0,1603386593,,"q!"
 :WQ!
 |2,0,1603382502,,"WQ!"
 :q
@@ -35,308 +35,272 @@
 
 # Registers:
 ""1	LINE	0
-	            print("IN FIRST LOOP")
-|3,1,1,1,1,0,1603382629,"            print(\"IN FIRST LOOP\")"
+	#        self.pwm_lw.frequency = 0
+|3,1,1,1,1,0,1603385085,"#        self.pwm_lw.frequency = 0"
 "2	LINE	0
-	                print("IN SECOND LOOP")
-|3,0,2,1,1,0,1603382621,"                print(\"IN SECOND LOOP\")"
+	#        self.pmw_rw.frequency = 0
+|3,0,2,1,1,0,1603385083,"#        self.pmw_rw.frequency = 0"
 "3	LINE	0
-	        servo.test()
-|3,0,3,1,1,0,1603380326,"        servo.test()"
+	            print("IN FIRST LOOP")
+|3,0,3,1,1,0,1603382629,"            print(\"IN FIRST LOOP\")"
 "4	LINE	0
-	#        GPIO.cleanup()
-|3,0,4,1,1,0,1603298983,"#        GPIO.cleanup()"
+	                print("IN SECOND LOOP")
+|3,0,4,1,1,0,1603382621,"                print(\"IN SECOND LOOP\")"
 "5	LINE	0
-	#        self.pwm1.stop()
-|3,0,5,1,1,0,1603298982,"#        self.pwm1.stop()"
+	        servo.test()
+|3,0,5,1,1,0,1603380326,"        servo.test()"
 "6	LINE	0
-	#        self.pwm0.stop()
-|3,0,6,1,1,0,1603298982,"#        self.pwm0.stop()"
+	#        GPIO.cleanup()
+|3,0,6,1,1,0,1603298983,"#        GPIO.cleanup()"
 "7	LINE	0
-	#        GPIO.output(self.LWF,GPIO.LOW)
-|3,0,7,1,1,0,1603298865,"#        GPIO.output(self.LWF,GPIO.LOW)"
+	#        self.pwm1.stop()
+|3,0,7,1,1,0,1603298982,"#        self.pwm1.stop()"
 "8	LINE	0
-	#        GPIO.output(self.RWB,GPIO.LOW)
-|3,0,8,1,1,0,1603298865,"#        GPIO.output(self.RWB,GPIO.LOW)"
+	#        self.pwm0.stop()
+|3,0,8,1,1,0,1603298982,"#        self.pwm0.stop()"
 "9	LINE	0
-	#        GPIO.output(self.LWB,GPIO.HIGH)
-|3,0,9,1,1,0,1603298864,"#        GPIO.output(self.LWB,GPIO.HIGH)"
+	#        GPIO.output(self.LWF,GPIO.LOW)
+|3,0,9,1,1,0,1603298865,"#        GPIO.output(self.LWF,GPIO.LOW)"
 "-	CHAR	0
 	)
 |3,0,36,0,1,0,1603298399,")"
 
 # File marks:
-'0  22  0  ~/vegaMain.py
-|4,48,22,0,1603383328,"~/vegaMain.py"
-'1  107  23  ~/vegaMotor.py
-|4,49,107,23,1603383312,"~/vegaMotor.py"
-'2  102  23  ~/vegaMotor.py
-|4,50,102,23,1603383287,"~/vegaMotor.py"
-'3  102  23  ~/vegaMotor.py
-|4,51,102,23,1603383287,"~/vegaMotor.py"
-'4  97  23  ~/vegaMotor.py
-|4,52,97,23,1603383258,"~/vegaMotor.py"
-'5  97  23  ~/vegaMotor.py
-|4,53,97,23,1603383258,"~/vegaMotor.py"
-'6  97  23  ~/vegaMotor.py
-|4,54,97,23,1603383258,"~/vegaMotor.py"
-'7  97  23  ~/vegaMotor.py
-|4,55,97,23,1603383258,"~/vegaMotor.py"
-'8  98  23  ~/vegaMotor.py
-|4,56,98,23,1603383184,"~/vegaMotor.py"
-'9  97  23  ~/vegaMotor.py
-|4,57,97,23,1603383184,"~/vegaMotor.py"
+'0  34  20  ~/vegaMain.py
+|4,48,34,20,1603387403,"~/vegaMain.py"
+'1  95  37  ~/vegaMotor.py
+|4,49,95,37,1603387320,"~/vegaMotor.py"
+'2  100  21  ~/vegaMotor.py
+|4,50,100,21,1603387073,"~/vegaMotor.py"
+'3  100  21  ~/vegaMotor.py
+|4,51,100,21,1603387073,"~/vegaMotor.py"
+'4  101  37  ~/vegaMotor.py
+|4,52,101,37,1603387049,"~/vegaMotor.py"
+'5  101  37  ~/vegaMotor.py
+|4,53,101,37,1603387049,"~/vegaMotor.py"
+'6  101  37  ~/vegaMotor.py
+|4,54,101,37,1603387049,"~/vegaMotor.py"
+'7  101  37  ~/vegaMotor.py
+|4,55,101,37,1603387049,"~/vegaMotor.py"
+'8  103  25  ~/vegaMotor.py
+|4,56,103,25,1603387026,"~/vegaMotor.py"
+'9  102  25  ~/vegaMotor.py
+|4,57,102,25,1603387026,"~/vegaMotor.py"
 
 # Jumplist (newest first):
--'  22  0  ~/vegaMain.py
-|4,39,22,0,1603383328,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603383319,"~/vegaMain.py"
--'  107  23  ~/vegaMotor.py
-|4,39,107,23,1603383312,"~/vegaMotor.py"
--'  107  23  ~/vegaMotor.py
-|4,39,107,23,1603383312,"~/vegaMotor.py"
--'  102  23  ~/vegaMotor.py
-|4,39,102,23,1603383300,"~/vegaMotor.py"
--'  102  23  ~/vegaMotor.py
-|4,39,102,23,1603383300,"~/vegaMotor.py"
--'  102  23  ~/vegaMotor.py
-|4,39,102,23,1603383287,"~/vegaMotor.py"
--'  102  23  ~/vegaMotor.py
-|4,39,102,23,1603383287,"~/vegaMotor.py"
--'  97  23  ~/vegaMotor.py
-|4,39,97,23,1603383279,"~/vegaMotor.py"
--'  97  23  ~/vegaMotor.py
-|4,39,97,23,1603383279,"~/vegaMotor.py"
--'  97  23  ~/vegaMotor.py
-|4,39,97,23,1603383279,"~/vegaMotor.py"
--'  97  23  ~/vegaMotor.py
-|4,39,97,23,1603383279,"~/vegaMotor.py"
--'  97  23  ~/vegaMotor.py
-|4,39,97,23,1603383258,"~/vegaMotor.py"
--'  97  23  ~/vegaMotor.py
-|4,39,97,23,1603383258,"~/vegaMotor.py"
--'  98  23  ~/vegaMotor.py
-|4,39,98,23,1603383186,"~/vegaMotor.py"
--'  98  23  ~/vegaMotor.py
-|4,39,98,23,1603383186,"~/vegaMotor.py"
--'  98  23  ~/vegaMotor.py
-|4,39,98,23,1603383186,"~/vegaMotor.py"
--'  98  23  ~/vegaMotor.py
-|4,39,98,23,1603383186,"~/vegaMotor.py"
--'  98  23  ~/vegaMotor.py
-|4,39,98,23,1603383186,"~/vegaMotor.py"
--'  98  23  ~/vegaMotor.py
-|4,39,98,23,1603383186,"~/vegaMotor.py"
--'  97  23  ~/vegaMotor.py
-|4,39,97,23,1603383184,"~/vegaMotor.py"
--'  97  23  ~/vegaMotor.py
-|4,39,97,23,1603383184,"~/vegaMotor.py"
--'  97  23  ~/vegaMotor.py
-|4,39,97,23,1603383168,"~/vegaMotor.py"
--'  97  23  ~/vegaMotor.py
-|4,39,97,23,1603383168,"~/vegaMotor.py"
--'  96  34  ~/vegaMotor.py
-|4,39,96,34,1603382667,"~/vegaMotor.py"
--'  96  34  ~/vegaMotor.py
-|4,39,96,34,1603382667,"~/vegaMotor.py"
--'  96  34  ~/vegaMotor.py
-|4,39,96,34,1603382667,"~/vegaMotor.py"
--'  96  34  ~/vegaMotor.py
-|4,39,96,34,1603382667,"~/vegaMotor.py"
--'  96  34  ~/vegaMotor.py
-|4,39,96,34,1603382667,"~/vegaMotor.py"
--'  96  34  ~/vegaMotor.py
-|4,39,96,34,1603382667,"~/vegaMotor.py"
--'  96  34  ~/vegaMotor.py
-|4,39,96,34,1603382667,"~/vegaMotor.py"
--'  96  34  ~/vegaMotor.py
-|4,39,96,34,1603382667,"~/vegaMotor.py"
--'  96  34  ~/vegaMotor.py
-|4,39,96,34,1603382667,"~/vegaMotor.py"
--'  96  34  ~/vegaMotor.py
-|4,39,96,34,1603382667,"~/vegaMotor.py"
--'  96  34  ~/vegaMotor.py
-|4,39,96,34,1603382659,"~/vegaMotor.py"
--'  96  34  ~/vegaMotor.py
-|4,39,96,34,1603382659,"~/vegaMotor.py"
--'  95  12  ~/vegaMotor.py
-|4,39,95,12,1603382640,"~/vegaMotor.py"
--'  95  12  ~/vegaMotor.py
-|4,39,95,12,1603382640,"~/vegaMotor.py"
--'  95  12  ~/vegaMotor.py
-|4,39,95,12,1603382640,"~/vegaMotor.py"
--'  95  12  ~/vegaMotor.py
-|4,39,95,12,1603382640,"~/vegaMotor.py"
--'  95  12  ~/vegaMotor.py
-|4,39,95,12,1603382640,"~/vegaMotor.py"
--'  95  12  ~/vegaMotor.py
-|4,39,95,12,1603382640,"~/vegaMotor.py"
--'  95  12  ~/vegaMotor.py
-|4,39,95,12,1603382640,"~/vegaMotor.py"
--'  95  12  ~/vegaMotor.py
-|4,39,95,12,1603382640,"~/vegaMotor.py"
--'  95  12  ~/vegaMotor.py
-|4,39,95,12,1603382640,"~/vegaMotor.py"
--'  95  12  ~/vegaMotor.py
-|4,39,95,12,1603382640,"~/vegaMotor.py"
--'  95  12  ~/vegaMotor.py
-|4,39,95,12,1603382640,"~/vegaMotor.py"
--'  95  12  ~/vegaMotor.py
-|4,39,95,12,1603382640,"~/vegaMotor.py"
--'  95  12  ~/vegaMotor.py
-|4,39,95,12,1603382632,"~/vegaMotor.py"
--'  95  12  ~/vegaMotor.py
-|4,39,95,12,1603382632,"~/vegaMotor.py"
--'  101  38  ~/vegaMotor.py
-|4,39,101,38,1603382595,"~/vegaMotor.py"
--'  100  38  ~/vegaMotor.py
-|4,39,100,38,1603382595,"~/vegaMotor.py"
--'  101  38  ~/vegaMotor.py
-|4,39,101,38,1603382595,"~/vegaMotor.py"
--'  100  38  ~/vegaMotor.py
-|4,39,100,38,1603382595,"~/vegaMotor.py"
--'  101  38  ~/vegaMotor.py
-|4,39,101,38,1603382595,"~/vegaMotor.py"
--'  100  38  ~/vegaMotor.py
-|4,39,100,38,1603382595,"~/vegaMotor.py"
--'  100  38  ~/vegaMotor.py
-|4,39,100,38,1603382595,"~/vegaMotor.py"
--'  100  38  ~/vegaMotor.py
-|4,39,100,38,1603382595,"~/vegaMotor.py"
--'  100  38  ~/vegaMotor.py
-|4,39,100,38,1603382595,"~/vegaMotor.py"
--'  101  38  ~/vegaMotor.py
-|4,39,101,38,1603382595,"~/vegaMotor.py"
--'  100  38  ~/vegaMotor.py
-|4,39,100,38,1603382595,"~/vegaMotor.py"
--'  101  38  ~/vegaMotor.py
-|4,39,101,38,1603382595,"~/vegaMotor.py"
--'  100  38  ~/vegaMotor.py
-|4,39,100,38,1603382595,"~/vegaMotor.py"
--'  101  38  ~/vegaMotor.py
-|4,39,101,38,1603382595,"~/vegaMotor.py"
--'  100  38  ~/vegaMotor.py
-|4,39,100,38,1603382595,"~/vegaMotor.py"
--'  100  38  ~/vegaMotor.py
-|4,39,100,38,1603382595,"~/vegaMotor.py"
--'  100  38  ~/vegaMotor.py
-|4,39,100,38,1603382595,"~/vegaMotor.py"
--'  100  38  ~/vegaMotor.py
-|4,39,100,38,1603382595,"~/vegaMotor.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
--'  35  0  ~/vegaMain.py
-|4,39,35,0,1603382593,"~/vegaMain.py"
+-'  34  20  ~/vegaMain.py
+|4,39,34,20,1603387403,"~/vegaMain.py"
+-'  36  0  ~/vegaMain.py
+|4,39,36,0,1603387322,"~/vegaMain.py"
+-'  95  37  ~/vegaMotor.py
+|4,39,95,37,1603387320,"~/vegaMotor.py"
+-'  95  37  ~/vegaMotor.py
+|4,39,95,37,1603387320,"~/vegaMotor.py"
+-'  100  21  ~/vegaMotor.py
+|4,39,100,21,1603387107,"~/vegaMotor.py"
+-'  100  21  ~/vegaMotor.py
+|4,39,100,21,1603387107,"~/vegaMotor.py"
+-'  100  21  ~/vegaMotor.py
+|4,39,100,21,1603387073,"~/vegaMotor.py"
+-'  100  21  ~/vegaMotor.py
+|4,39,100,21,1603387073,"~/vegaMotor.py"
+-'  101  37  ~/vegaMotor.py
+|4,39,101,37,1603387053,"~/vegaMotor.py"
+-'  101  37  ~/vegaMotor.py
+|4,39,101,37,1603387053,"~/vegaMotor.py"
+-'  101  37  ~/vegaMotor.py
+|4,39,101,37,1603387053,"~/vegaMotor.py"
+-'  101  37  ~/vegaMotor.py
+|4,39,101,37,1603387053,"~/vegaMotor.py"
+-'  101  37  ~/vegaMotor.py
+|4,39,101,37,1603387049,"~/vegaMotor.py"
+-'  101  37  ~/vegaMotor.py
+|4,39,101,37,1603387049,"~/vegaMotor.py"
+-'  103  25  ~/vegaMotor.py
+|4,39,103,25,1603387030,"~/vegaMotor.py"
+-'  103  25  ~/vegaMotor.py
+|4,39,103,25,1603387030,"~/vegaMotor.py"
+-'  103  25  ~/vegaMotor.py
+|4,39,103,25,1603387030,"~/vegaMotor.py"
+-'  103  25  ~/vegaMotor.py
+|4,39,103,25,1603387030,"~/vegaMotor.py"
+-'  103  25  ~/vegaMotor.py
+|4,39,103,25,1603387030,"~/vegaMotor.py"
+-'  103  25  ~/vegaMotor.py
+|4,39,103,25,1603387030,"~/vegaMotor.py"
+-'  102  25  ~/vegaMotor.py
+|4,39,102,25,1603387026,"~/vegaMotor.py"
+-'  102  25  ~/vegaMotor.py
+|4,39,102,25,1603387026,"~/vegaMotor.py"
+-'  102  25  ~/vegaMotor.py
+|4,39,102,25,1603387026,"~/vegaMotor.py"
+-'  102  25  ~/vegaMotor.py
+|4,39,102,25,1603387026,"~/vegaMotor.py"
+-'  102  25  ~/vegaMotor.py
+|4,39,102,25,1603387026,"~/vegaMotor.py"
+-'  102  25  ~/vegaMotor.py
+|4,39,102,25,1603387026,"~/vegaMotor.py"
+-'  100  3  ~/vegaMotor.py
+|4,39,100,3,1603386962,"~/vegaMotor.py"
+-'  100  3  ~/vegaMotor.py
+|4,39,100,3,1603386962,"~/vegaMotor.py"
+-'  100  3  ~/vegaMotor.py
+|4,39,100,3,1603386962,"~/vegaMotor.py"
+-'  100  3  ~/vegaMotor.py
+|4,39,100,3,1603386962,"~/vegaMotor.py"
+-'  100  3  ~/vegaMotor.py
+|4,39,100,3,1603386954,"~/vegaMotor.py"
+-'  100  3  ~/vegaMotor.py
+|4,39,100,3,1603386954,"~/vegaMotor.py"
+-'  119  23  ~/vegaMotor.py
+|4,39,119,23,1603386596,"~/vegaMotor.py"
+-'  118  23  ~/vegaMotor.py
+|4,39,118,23,1603386596,"~/vegaMotor.py"
+-'  115  23  ~/vegaMotor.py
+|4,39,115,23,1603386596,"~/vegaMotor.py"
+-'  114  23  ~/vegaMotor.py
+|4,39,114,23,1603386596,"~/vegaMotor.py"
+-'  115  23  ~/vegaMotor.py
+|4,39,115,23,1603386596,"~/vegaMotor.py"
+-'  114  23  ~/vegaMotor.py
+|4,39,114,23,1603386596,"~/vegaMotor.py"
+-'  114  23  ~/vegaMotor.py
+|4,39,114,23,1603386596,"~/vegaMotor.py"
+-'  119  23  ~/vegaMotor.py
+|4,39,119,23,1603386596,"~/vegaMotor.py"
+-'  118  23  ~/vegaMotor.py
+|4,39,118,23,1603386596,"~/vegaMotor.py"
+-'  115  23  ~/vegaMotor.py
+|4,39,115,23,1603386596,"~/vegaMotor.py"
+-'  114  23  ~/vegaMotor.py
+|4,39,114,23,1603386596,"~/vegaMotor.py"
+-'  115  23  ~/vegaMotor.py
+|4,39,115,23,1603386596,"~/vegaMotor.py"
+-'  114  23  ~/vegaMotor.py
+|4,39,114,23,1603386596,"~/vegaMotor.py"
+-'  114  23  ~/vegaMotor.py
+|4,39,114,23,1603386596,"~/vegaMotor.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386593,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386560,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386560,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386560,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386560,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386560,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386560,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386560,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386560,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386560,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386560,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386560,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386560,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386560,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386560,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386560,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386560,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386560,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386560,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386560,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386560,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386560,"~/vegaMain.py"
+-'  26  0  ~/vegaMain.py
+|4,39,26,0,1603386560,"~/vegaMain.py"
 
 # History of marks within files (newest to oldest):
 
 > ~/vegaMain.py
-	*	1603383327	0
-	"	22	0
-	^	22	0
-	.	22	0
-	+	11	24
-	+	11	25
-	+	11	57
-	+	35	29
-	+	34	10
-	+	1	25
-	+	2	26
-	+	11	22
-	+	11	27
-	+	12	30
-	+	13	21
-	+	14	26
-	+	13	19
-	+	14	27
-	+	12	27
-	+	16	26
-	+	14	29
-	+	18	26
-	+	20	26
-	+	16	17
-	+	18	17
-	+	11	22
-	+	3	26
-	+	8	16
-	+	27	22
-	+	10	0
-	+	11	0
-	+	12	0
-	+	13	0
-	+	14	0
-	+	15	0
-	+	16	0
-	+	17	0
-	+	18	0
-	+	19	0
-	+	20	0
-	+	25	0
+	*	1603387402	0
+	"	34	20
+	^	34	21
+	.	34	20
+	+	38	0
 	+	2	0
 	+	7	0
-	+	27	19
-	+	27	22
+	+	40	19
+	+	40	22
 	+	2	0
 	+	7	0
 	+	10	0
@@ -349,12 +313,12 @@
 	+	17	0
 	+	18	0
 	+	19	0
-	+	25	0
+	+	38	0
 	+	20	0
-	+	27	0
+	+	40	0
 	+	3	0
 	+	8	0
-	+	26	24
+	+	39	24
 	+	20	0
 	+	19	0
 	+	18	0
@@ -365,7 +329,7 @@
 	+	12	0
 	+	11	0
 	+	15	0
-	+	25	0
+	+	38	0
 	+	12	0
 	+	13	0
 	+	14	0
@@ -376,8 +340,8 @@
 	+	19	0
 	+	11	0
 	+	20	0
-	+	26	0
-	+	24	38
+	+	39	0
+	+	36	38
 	+	11	0
 	+	12	0
 	+	13	0
@@ -391,117 +355,157 @@
 	+	19	0
 	+	22	24
 	+	23	38
-	+	24	37
+	+	36	37
 	+	22	0
 	+	23	0
-	+	24	0
+	+	36	0
 	+	22	0
+	+	11	0
+	+	12	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	20	0
+	+	21	0
+	+	11	0
+	+	12	0
+	+	13	0
+	+	14	0
+	+	15	0
+	+	16	0
+	+	17	0
+	+	18	0
+	+	19	0
+	+	20	0
+	+	21	0
+	+	22	0
+	+	23	0
+	+	36	39
+	+	37	0
+	+	27	39
+	+	36	0
+	+	24	19
+	+	26	20
+	+	35	33
+	+	33	38
+	+	35	37
+	+	31	39
+	+	32	20
+	+	34	20
 
 > ~/vegaMotor.py
-	*	1603383312	0
-	"	107	23
-	^	102	24
-	.	102	23
-	+	27	0
-	+	27	7
-	+	9	21
-	+	52	29
-	+	9	0
-	+	35	0
-	+	52	0
-	+	41	0
-	+	52	0
-	+	51	0
-	+	38	29
-	+	90	0
-	+	46	34
-	+	49	37
-	+	51	0
-	+	14	0
-	+	21	0
-	+	27	0
-	+	60	30
-	+	63	28
-	+	37	0
-	+	40	28
-	+	52	0
-	+	64	0
-	+	35	21
-	+	43	16
-	+	45	53
-	+	48	64
-	+	71	7
-	+	70	14
-	+	69	28
-	+	70	28
-	+	68	29
-	+	74	30
-	+	76	29
-	+	78	0
-	+	84	29
-	+	82	29
-	+	88	12
-	+	87	32
-	+	88	32
-	+	87	31
-	+	88	34
-	+	89	0
-	+	122	0
-	+	3	43
-	+	4	36
-	+	5	31
-	+	27	21
+	*	1603387319	0
+	"	95	37
+	^	101	38
+	.	99	66
 	+	4	0
 	+	5	0
 	+	4	0
 	+	5	0
-	+	31	84
-	+	33	42
-	+	27	43
-	+	110	21
-	+	112	35
-	+	113	20
-	+	32	83
-	+	120	24
-	+	26	17
+	+	29	84
+	+	32	42
+	+	25	43
+	+	126	21
+	+	128	35
+	+	129	20
+	+	30	83
+	+	136	24
+	+	25	17
 	+	24	33
-	+	114	26
-	+	117	26
+	+	130	26
+	+	133	26
 	+	24	0
-	+	26	0
-	+	85	0
-	+	87	0
-	+	94	16
-	+	105	33
-	+	94	34
-	+	99	35
-	+	98	23
-	+	103	23
-	+	95	29
-	+	96	3
-	+	98	3
-	+	93	33
-	+	94	11
-	+	93	33
-	+	95	16
+	+	25	0
+	+	86	0
+	+	88	0
+	+	96	16
+	+	120	33
 	+	96	34
-	+	98	27
-	+	100	29
-	+	101	3
-	+	103	28
-	+	101	34
-	+	98	12
-	+	103	12
-	+	96	35
-	+	95	33
-	+	101	38
-	+	96	34
-	+	101	0
-	+	95	0
-	+	96	34
-	+	98	23
+	+	109	35
+	+	107	58
+	+	117	58
+	+	99	29
+	+	106	3
+	+	107	38
+	+	94	33
+	+	96	11
+	+	94	33
+	+	99	16
+	+	106	34
+	+	107	62
+	+	111	29
+	+	116	3
+	+	117	63
+	+	116	34
+	+	107	47
+	+	117	47
+	+	106	35
+	+	99	33
+	+	116	38
+	+	106	34
+	+	116	0
+	+	99	0
+	+	106	34
+	+	107	58
+	+	107	23
+	+	117	23
+	+	95	15
+	+	25	0
+	+	24	0
+	+	31	0
+	+	33	27
+	+	34	26
+	+	33	54
+	+	106	31
+	+	38	32
+	+	106	42
+	+	107	35
+	+	109	25
+	+	110	30
+	+	116	42
+	+	117	35
+	+	118	25
+	+	119	69
+	+	122	37
+	+	98	29
+	+	96	16
 	+	97	23
-	+	102	23
+	+	98	23
+	+	108	23
+	+	104	40
+	+	103	32
+	+	105	16
+	+	106	3
+	+	107	3
+	+	108	3
+	+	109	3
+	+	110	3
+	+	103	26
+	+	101	37
+	+	100	21
+	+	109	27
+	+	112	16
+	+	100	65
+	+	105	46
+	+	100	65
+	+	112	34
+	+	116	3
+	+	117	3
+	+	118	3
+	+	114	41
+	+	115	16
+	+	112	44
+	+	115	31
+	+	111	66
+	+	99	66
+
+> /usr/local/lib/python3.7/dist-packages/adafruit_motor/servo.py
+	*	1603385583	0
+	"	132	81
 
 > ~/Adafruit_CircuitPython_PCA9685/examples/pca9685_simpletest.py
 	*	1603381741	0
