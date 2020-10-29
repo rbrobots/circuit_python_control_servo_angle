@@ -108,7 +108,7 @@ class Motor():
                     self.servo0.angle=j
 #                    print(j)
             self.servo0_pos = n
-        elif i==1 and n<=90 and n>=0:#restrict motion to 90 degrees
+        elif i==1 and n<=160 and n>=0:#restrict motion to 90 degrees
             if n > self.servo1_pos:#anti-clockwise
                 for j in range(self.servo1_pos,n):
                     self.servo1.angle = j

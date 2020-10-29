@@ -39,9 +39,9 @@ time.sleep(1)
 for i in range(180):
     servo0.angle = 180 - i
 time.sleep(1)
-for i in range(90):
+for i in range(160):
     servo1.angle=i
 time.sleep(1)
-for i in range(90):
-    servo1.angle = 90 - i
+for i in range(160):
+    servo1.angle = 160 - i
 pca.deinit()
