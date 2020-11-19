@@ -1,11 +1,16 @@
 # vega-rpi
-Robot car operating on RPi
+A program to allow user input to control angle of 2 servo's using Raspbery Pi and Adafruit's PCA9685 
+
+See my blog for a more in-depth explanation of how I got this working: https://rbrobots.com/f/phase-5---adding-a-2dof-camera-mount-and-camera-in-progress
 
 Required libraries: 
 
 <ul>
 <li>Adafruit_CircuitPython_PCA9685</li>
-<li>RPi: RPi 3 model B+ with Raspian headless</li>
+<li>RPi 3 model B+ with Raspian headless</li>
+  <li>2 degree of freedom pan-tilt camera </li>
+  <li>5v battery input to the RPi either through computer or batteries</li>
+  <li>4.8v battery input to the PCA9685 (Get stable voltage supply 5V maximum and be careful when wiring this to the driver - it is easy to short circuit)</li>
 </ul>
 
 Setup: SPI turned on, using PCA9685 with 4.8v; refer to blog (https://rbrobots.com/f/phase-5---adding-a-2dof-camera-mount-and-camera-in-progress)
