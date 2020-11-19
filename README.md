@@ -36,6 +36,8 @@ https://www.youtube.com/watch?v=gVWx7c1Q3Kc&t=1s&ab_channel=RBrobots
 
 <li>pca9685_servo.py - Simulates full motion of two servos. Adapted demo file from Adafruit's library with adapted range motion for servo's in use</li>
 
+<li>The other two files are <strong>NOT</strong> required for this project. But have been left here for my later use.</li>
+
 </ul>
 
 <strong>To execute code:</strong>
