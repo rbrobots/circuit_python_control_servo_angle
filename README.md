@@ -24,12 +24,12 @@ Setup:
   <li>Install Raspbian on RPi</li>
   <li>Enable SPI</li>
   <li>Download Adafruit Circuit Python Library</li>
-  <li>See blog for full explanation. Link above<li>
+  <li>See blog for full explanation. Link above</li>
 </ul>
 
 Required files to execute based on video demo example:
 
-  <li>vegaMain.py - Main executeable file</li>
+<li>vegaMain.py - Main executeable file</li>
 
 <li>vegaMotor.py - Includes Motor class with wheel motor and servo motor control</li>
 
@@ -41,6 +41,7 @@ To execute code:
 
 <ul>
   <li>sudo python3 ./pca9685_servo.py</li>
-  <li>sudo python3 ./vegaMain.py</li></ul>
+  <li>sudo python3 ./vegaMain.py</li>
+</ul>
 
 
