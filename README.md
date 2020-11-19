@@ -3,7 +3,7 @@ A program to allow user input to control angle of 2 servo's using Raspbery Pi an
 
 See my blog for a more in-depth explanation of how I got this working: https://rbrobots.com/f/phase-5---adding-a-2dof-camera-mount-and-camera-in-progress
 
-Required libraries: 
+Required libraries/resources: 
 
 <ul>
 <li>Adafruit_CircuitPython_PCA9685</li>
