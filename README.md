@@ -1,15 +1,15 @@
 # vega-rpi
 A program to allow user input to control angle of 2 servo's using Raspbery Pi and Adafruit's PCA9685 
 
-See my blog for a more in-depth explanation of how I got this working: 
+</strong>See my blog for a more in-depth explanation of how I got this working: </strong>
 
 https://rbrobots.com/f/phase-5---adding-a-2dof-camera-mount-and-camera-in-progress
 
-Video demo:
+<strong>Video demo:</strong>
 
 https://www.youtube.com/watch?v=gVWx7c1Q3Kc&t=1s&ab_channel=RBrobots
 
-Required libraries/resources: 
+<strong>Required libraries/resources: </strong>
 
 <ul>
 <li>Adafruit_CircuitPython_PCA9685</li>
@@ -19,7 +19,8 @@ Required libraries/resources:
   <li>4.8v battery input to the PCA9685 (Get stable voltage supply 5V maximum and be careful when wiring this to the driver - it is easy to short circuit)</li>
 </ul>
 
-Setup: 
+<strong>Setup: </strong>
+
 <ul>
   <li>Install Raspbian on RPi</li>
   <li>Enable SPI</li>
@@ -27,7 +28,7 @@ Setup:
   <li>See blog for full explanation. Link above</li>
 </ul>
 
-Required files to execute based on video demo example:
+<strong>Required files to execute based on video demo example:</strong>
 
 <li>vegaMain.py - Main executeable file</li>
 
@@ -37,7 +38,7 @@ Required files to execute based on video demo example:
 
 </ul>
 
-To execute code:
+<strong>To execute code:</strong>
 
 <ul>
   <li>sudo python3 ./pca9685_servo.py</li>
