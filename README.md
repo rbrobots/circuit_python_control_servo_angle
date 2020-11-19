@@ -1,9 +1,13 @@
 # vega-rpi
 Robot car operating on RPi
 
-Required libraries: Adafruit_CircuitPython_PCA9685
+Required libraries: 
+
+Adafruit_CircuitPython_PCA9685
+
 RPi: RPi 3 model B+ with Raspian headless
-Setup: SPI turned on, using PCA9685 with 4.8v; refer to blog
+
+Setup: SPI turned on, using PCA9685 with 4.8v; refer to blog (https://rbrobots.com/f/phase-5---adding-a-2dof-camera-mount-and-camera-in-progress)
 
 Required files to execute based on video demo example: https://www.youtube.com/watch?v=gVWx7c1Q3Kc&ab_channel=RBrobots
 
