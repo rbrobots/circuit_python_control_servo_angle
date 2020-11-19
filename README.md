@@ -29,7 +29,7 @@ https://www.youtube.com/watch?v=gVWx7c1Q3Kc&t=1s&ab_channel=RBrobots
 </ul>
 
 <strong>Required files to execute based on video demo example:</strong>
-
+<ul>
 <li>vegaMain.py - Main executeable file</li>
 
 <li>vegaMotor.py - Includes Motor class with wheel motor and servo motor control</li>
