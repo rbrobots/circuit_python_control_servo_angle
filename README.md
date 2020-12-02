@@ -1,4 +1,4 @@
-# User-Input-Program-to-Control-Servo-Angle
+# control-servo-input-angle
 A program to allow user input to control angle of 2 servo's using Raspbery Pi and Adafruit's PCA9685 
 
 </strong>See my blog for a more in-depth explanation of how I got this working: </strong>
