@@ -1,10 +1,6 @@
 # circuit-python-control-servo-angle
 A program to allow user input to control angle of 2 servo's using Raspbery Pi and Adafruit's PCA9685 
 
-</strong>See my blog for a more in-depth explanation of how I got this working: </strong>
-
-https://rbrobots.com/f/phase-5---adding-a-2dof-camera-mount-and-camera-in-progress
-
 <strong>Video demo:</strong>
 
 https://www.youtube.com/watch?v=gVWx7c1Q3Kc&t=1s&ab_channel=RBrobots
